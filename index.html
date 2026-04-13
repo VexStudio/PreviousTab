@@ -1,1 +1,152 @@
-here
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PreviousTab for Safari</title>
+    <meta name="description" content="PreviousTab adds keyboard-driven previous-tab navigation to Safari on macOS.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="shell topbar-inner">
+            <a class="brand" href="./index.html">
+                <img src="assets/icon_1024.png" alt="PreviousTab icon">
+                <span>PreviousTab</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="./index.html">App</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="./privacy.html">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="shell hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Safari extension</span>
+                <h1>Previous-tab navigation for real browsing.</h1>
+                <p>PreviousTab helps you move through the tabs you actually used, not just the tabs sitting next to each other in Safari's tab bar. It is built for keyboard-first navigation, multiple windows, and the way real browsing sessions branch and change direction.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#faq">Read FAQ</a>
+                    <a class="btn btn-secondary" href="./privacy.html">Privacy policy</a>
+                </div>
+            </div>
+            <div class="hero-shot">
+                <img src="assets/browser-01-overview-hero.png" alt="PreviousTab overview screenshot">
+            </div>
+        </section>
+
+        <section class="shell section" aria-labelledby="features-title">
+            <div class="section-head">
+                <span class="eyebrow">What it does</span>
+                <h2 id="features-title">Built to solve a specific Safari problem.</h2>
+                <p class="lede">Safari makes it easy to open many tabs, jump between windows, follow links from outside the browser, and lose the tab you were using a moment ago. PreviousTab keeps a local recent-tab trail so moving back and forward through your browsing flow is faster and more predictable.</p>
+            </div>
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>Go back to the previously active tab</h3>
+                    <p>By default, <strong>⌘⌥,</strong> jumps to the last tab you were using, without making you scan crowded tab bars.</p>
+                </article>
+                <article class="card">
+                    <h3>Move forward again when the path still exists</h3>
+                    <p>After stepping back, <strong>⌘⌥.</strong> can move forward through the same recent-tab path. If you manually switch to another tab, the forward path resets to match your new flow.</p>
+                </article>
+                <article class="card">
+                    <h3>Preserve momentum across windows and new tabs</h3>
+                    <p>Opening links in a new tab or a new Safari window is treated as part of normal browsing, so the extension is designed to keep navigation coherent across those transitions.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="shell section" aria-labelledby="screenshots-title">
+            <div class="section-head">
+                <span class="eyebrow">Screenshots</span>
+                <h2 id="screenshots-title">The extension is focused, not broad.</h2>
+                <p class="lede">The product is intentionally narrow: fast previous-tab navigation, simple controls, shortcut support, and local state. These screenshots show the main behaviors the extension is built around.</p>
+            </div>
+            <div class="shots">
+                <figure class="shot" data-viewer-item data-viewer-title="Default shortcuts" data-viewer-caption="Default shortcuts are <strong>⌘⌥,</strong> for back and <strong>⌘⌥.</strong> for forward. Shortcuts can also be changed in Safari's extension settings.">
+                    <img src="assets/browser-01-overview.png" alt="Default keyboard shortcuts screenshot">
+                    <figcaption>Default shortcuts are <strong>⌘⌥,</strong> for back and <strong>⌘⌥.</strong> for forward. Shortcuts can also be changed in Safari's extension settings.</figcaption>
+                </figure>
+                <figure class="shot" data-viewer-item data-viewer-title="Forward path" data-viewer-caption="Forward navigation follows the same recent path until you manually branch off by switching to a different tab.">
+                    <img src="assets/browser-02-forward.png" alt="Forward path screenshot">
+                    <figcaption>Forward navigation follows the same recent path until you manually branch off by switching to a different tab.</figcaption>
+                </figure>
+                <figure class="shot" data-viewer-item data-viewer-title="New tabs and windows" data-viewer-caption="Browsing across newly opened tabs and Safari windows is part of the intended workflow, not an edge case.">
+                    <img src="assets/browser-03-new-window.png" alt="New tab and new window screenshot">
+                    <figcaption>Browsing across newly opened tabs and Safari windows is part of the intended workflow, not an edge case.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="shell section" id="faq" aria-labelledby="faq-title">
+            <div class="section-head">
+                <span class="eyebrow">FAQ</span>
+                <h2 id="faq-title">Common questions</h2>
+            </div>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3 class="faq-question">What are the default keyboard shortcuts?</h3>
+                    <p class="faq-answer">By default, PreviousTab uses <strong>⌘⌥,</strong> to go to the previously active tab and <strong>⌘⌥.</strong> to move forward through the same recent-tab path.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Can I change the shortcuts?</h3>
+                    <p class="faq-answer">Yes. You can change them in <strong>Safari Settings → Extensions → PreviousTab</strong>. The extension also stores saved shortcut choices locally so they can be restored later.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">When does the forward path reset?</h3>
+                    <p class="faq-answer">If you manually switch to a different tab instead of moving forward through the existing path, the extension treats that as a new navigation branch and resets the forward path to match.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Does it work across new tabs and new windows?</h3>
+                    <p class="faq-answer">Yes. The extension is built around real Safari workflows, including opening links in new tabs and new windows and then continuing navigation from there.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">What permissions does PreviousTab use?</h3>
+                    <p class="faq-answer">The extension requests only <strong>storage</strong> and <strong>windows</strong>. Storage is used for local settings and local recent-tab state. Windows access is used to track and navigate tabs across Safari windows.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Does it read page content, page titles, or your browsing history from websites?</h3>
+                    <p class="faq-answer">No. The current implementation is intentionally limited. It relies on local tab and window state and avoids reading page content. The code also avoids URL/title-based behavior where Safari would require broader site-access prompts.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Where is data stored?</h3>
+                    <p class="faq-answer">The extension stores its settings and recent-tab state in Safari's local extension storage on your device. There is no account system and no remote sync service in this codebase.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Can I clear the stored recent-tab trail?</h3>
+                    <p class="faq-answer">Yes. The popup includes a clear recent-tabs action, and the extension also supports a configurable maximum tracked-tab limit. The default limit in the code is <strong>500</strong>, with a maximum supported value of <strong>5000</strong>.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Is this only for Safari on macOS?</h3>
+                    <p class="faq-answer">Yes. PreviousTab is designed specifically around Safari's extension model and Safari's window and tab behavior on macOS.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="shell section" id="contact" aria-labelledby="contact-title">
+            <div class="section-head">
+                <span class="eyebrow">Contact</span>
+                <h2 id="contact-title">Support and questions</h2>
+                <p class="lede">If you hit a bug, have a setup question, or need clarification about privacy or behavior, email support directly.</p>
+            </div>
+            <div class="card contact-card">
+                <img class="contact-email-image" src="assets/support-email.png" alt="Support email address">
+                <div class="contact-meta">Include your Safari version, macOS version, and a short description of what happened if you are reporting a bug.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="shell footer-inner">
+            <div>PreviousTab for Safari</div>
+            <div><a href="./privacy.html">Privacy policy</a></div>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>
