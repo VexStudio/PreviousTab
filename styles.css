@@ -198,18 +198,6 @@ img {
     border-color: var(--line);
 }
 
-.hero-shot {
-    background: rgba(255, 255, 255, 0.74);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: var(--shadow);
-    border-radius: 30px;
-    padding: 18px;
-}
-
-.hero-shot img {
-    border-radius: 12px;
-}
-
 .section {
     padding: 28px 0;
 }
@@ -471,7 +459,6 @@ body.viewer-open {
     max-height: 100%;
     object-fit: contain;
     border-radius: 22px;
-    background: rgba(255, 255, 255, 0.96);
     box-shadow: 0 30px 70px rgba(0, 0, 0, 0.24);
 }
 
@@ -590,7 +577,6 @@ body.viewer-open {
         grid-template-columns: 1fr;
     }
 
-    .hero-shot,
     .card,
     .faq-item,
     .policy section {
