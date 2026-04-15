@@ -459,7 +459,6 @@ body.viewer-open {
     max-height: 100%;
     object-fit: contain;
     border-radius: 22px;
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.24);
 }
 
 .viewer-copy {
