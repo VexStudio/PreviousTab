@@ -153,11 +153,25 @@ img {
     gap: 18px;
 }
 
+.app-store-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 14px;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.app-store-badge img {
+    width: auto;
+    height: 48px;
+}
+
 .hero-actions {
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
     padding-top: 6px;
+    align-items: stretch;
 }
 
 .btn {
@@ -165,11 +179,13 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 48px;
-    padding: 0 18px;
+    padding: 0 22px;
     border-radius: 14px;
     border: 1px solid transparent;
     text-decoration: none;
     font-weight: 650;
+    font-size: 15px;
+    line-height: 1;
 }
 
 .btn-primary {
